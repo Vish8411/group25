@@ -1,9 +1,16 @@
 package Git;
-
-public class Class1 {
-public static void main(String[] args) {
-	System.out.println("m1");
-	System.out.println("m2");
-}
-
-}
+	public class Class1 {
+		public static void main(String[] args) {
+			String s="abcdefgabcd";
+			for(int i=0;i<=s.length()-1;i++)
+			{
+				char ch=s.charAt(i);
+				int ab=s.indexOf(ch,i+1);
+				if(ab>1)
+				{
+					System.out.print(s.charAt(i));
+				}
+			}
+		}
+	}
+	
